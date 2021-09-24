@@ -7,6 +7,7 @@ from config import *
 from data import *
 from haiku.nets import MLP
 from torch.utils.data import DataLoader
+from utils import *
 
 # load arguments
 args = gen_args()
