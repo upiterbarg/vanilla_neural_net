@@ -4,7 +4,7 @@ import jax.numpy as np
 import optax
 
 from config import *
-from data import MyDataset
+from data import *
 from haiku.nets import MLP
 from torch.utils.data import DataLoader
 
