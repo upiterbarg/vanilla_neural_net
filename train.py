@@ -59,7 +59,7 @@ for epoch in range(args.n_epochs):
     	inputs, labels = data
 
 		# compute gradient and loss.
-		loss, grad = jax.value_and_grad(mse)(model_params, xs, bottom_flux, top_flux, ys)
+		loss, grad = jax.value_and_grad(mse)(model_params, inputs, labels)
 
 		if phase == 'train':
 			# transform the gradients using the optimiser.
