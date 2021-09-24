@@ -37,4 +37,5 @@ parser.add_argument('--log_per_iter', type=int, default=200, help='logging frequ
 
 def gen_args():
 	args = parser.parse_args()
+	args.modeloutf = os.path.join(args.outf, 'trained_model')
 	return args
